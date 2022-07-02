@@ -42,3 +42,16 @@ function ant(){
     this.last_signal = 0;
     this.orientation = Math.random() * 90;
 }
+
+// creating the gird
+function init_grid(){
+    for(var i = 0; i < grid_legth; i++){
+        grid[i] = new [];
+        temp_grid[i] = new [];
+        for(var j = 0; j < grid_legth; j++){
+            grid[i][j]=new cell(i,j);
+            temp_grid[i][j]=new cell(i,j);
+        }
+    }
+}
+
