@@ -35,3 +35,10 @@ function cell(_x, _y){
         return this.ant ? true : false;
     };
 }
+
+// function for the ant
+function ant(){
+    this.has_food = false;
+    this.last_signal = 0;
+    this.orientation = Math.random() * 90;
+}
